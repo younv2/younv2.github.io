@@ -33,3 +33,6 @@ header > img {
     height: 100%;
     background: lightgray;
 }
+.main img {
+    width : 300px;
+}
