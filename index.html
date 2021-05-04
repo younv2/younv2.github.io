@@ -6,31 +6,48 @@
     <meta charset="UTF-8">
     <title>윤주호의 개발블로그</title>
     <style>
+        header {
+            position: absolute;
+            background-color: lightgray;
+            left: 30px;
+            top: 100px;
+            width: 270px;
+            height: 300px;
+        }
+        header > h1 {
+            font-size: 20px;
+        }
+        h1 > a {
+            text-decoration: none;
+        }
+        header > img {
+            width : 100px;
+        }
         .contents {
             position: absolute;
             left: 30px;
-            top: 100px;
-            width: 200px;
+            top: 400px;
+            width: 270px;
             height: 100%;
-            padding: 30px 30px;
             background: gray;
         }
-
         .main {
             position: absolute;
             left: 300px;
             top: 100px;
             width: 70%;
             height: 100%;
-            padding: 30px 30px;
             background: blue;
         }
+        
     </style>
 </head>
 
 <body>
     <header>
         <h1><a href="index.html">윤주호의 개발블로그</a></h1>
+        <img src="images/윤주호.jpg" alt="윤주호 사진">
+        <p>21.04~ 더조은아카데미</p>
     </header>
     <section class="contents">
         <ul>
