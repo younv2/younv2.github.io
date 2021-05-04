@@ -1,20 +1,35 @@
 @charset "UTF-8";
 
+header {
+    position: absolute;
+    background-color: lightgray;
+    left: 30px;
+    top: 100px;
+    width: 270px;
+    height: 300px;
+}
+header > h1 {
+    font-size: 20px;
+}
+h1 > a {
+    text-decoration: none;
+}
+header > img {
+    width : 100px;
+}
 .contents {
     position: absolute;
     left: 30px;
-    top: 100px;
-    width: 200px;
+    top: 400px;
+    width: 270px;
     height: 100%;
-    padding: 30px 30px;
     background: gray;
-  }
-  .main {
+}
+.main {
     position: absolute;
     left: 300px;
     top: 100px;
     width: 70%;
     height: 100%;
-    padding: 30px 30px;
-    background: blue;
-  }
+    background: lightgray;
+}
