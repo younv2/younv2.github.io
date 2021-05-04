@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+::selection{/*브라우저 전역에 적용*/
+  background-color: purple;
+}
+body {
+  font-family: '나눔고딕','맑은 고딕','돋움',sans-serif;
+  font-size:20px;
+  line-height:1.5;
+}
+h1{
+  font-size: 46px;
+}
+h1::selection{/*드래그 했을때*/
+  background-color: pink;
+}
+span.txt /*종속 선택자: 기준 요소의 클래스명이나 아이디를 붙여서 작성
+해당 요소를 구체적으로 지정.*/
+{
+  color:red;
+}
+ul{
+  color: red;
+}
+/*
+a:link{링크 상태(기본)
+  text-decoration: none;
+  color: #000;
+}
+a:visited{/*방문한 적이 있을 때
+  color: #1cc5dc;
+}
+a:hover{/*마우스를 올렸을 때
+  color: #72147e;
+  background-color: red;
+}
+a:active{/*마우스로 클릭했을 때
+  text-decoration: line-through;
+  background-color: orange;
+}
+*/
+a {/* a요소의 성격이 밑줄과 고유의 색을 가지고 있기 때문에 a요소에 직접 적용*/
+  text-decoration: none;
+  color: #325288;
+}
+a:hover{/*마우스를 올렸을 때*/
+  color: #fff;
+  background-color: #845460;
+}

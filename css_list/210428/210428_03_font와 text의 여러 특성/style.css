@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+  background-color: #eee;/* 상속 x */
+  background-color: transparent;/* 투명, 기본값*/
+  color:#333;/* 상속: 지정된 선택자뿐만 아니라 자식, 자손 요소에게까지 적용되는 특성*/
+
+  /* 서체의 종류*/
+  font-family: '서울 남산체','전주 완판본 순L','맑은 고딕','돋움', sans-serif;
+  /*
+    서체(글꼴) 주의사항
+      1. 정확한 서체명 작성(띄어쓰기, 인용부호, 대소문자 등)
+      2. 상대방의 컴퓨터에 폰트가 없는 경우를 대비하여 2~3개의 서체를 추가 작성(fallback fonts)
+      3. 바탕체류로 끝날 경우 제일 마지막은 serif로 작성.
+      4. 돋움체류로 끝날 경우 제일 마지막은 sans-serif로 작성
+  */
+  font-size: 16px;/* 웹 브라우저의 기본 서체 크기*/
+  font-size: 28px;
+}
+h1 {/*h1 요소의 기본 성격은 2em의 크기를 가지고 bold 처리된 스타일을 가진다/type 선택자*/
+  font-size: 36px;
+  font-weight: normal;/* 서체의 굵기(bold/normal) 상속 */
+  font-style: italic;/* 서체 스타일. 기울여 쓰기*/
+  background-color: orange;
+}
+ul
+{
+  background-color: teal;
+  line-height: 38px;/*행간. 상속. 인라인 요소들의 상하 간격 조절*/
+  line-height: 1.5;/* 배수의 값으로 작성*/
+}
+.box1 
+{/* == 첫번째 ul */
+  font-family: '휴먼아미체', '맑은 고딕', sans-serif;
+  font-size : 20px;
+  text-align: center;/* 인라인 요소의 정렬 */
+}
+.box2
+{ /* 배경색, 행간, 텍스트 중앙 정렬*/
+  background-color: tomato;
+  line-height: 1.2;
+  text-align:center;
+  text-decoration:underline;/*밑줄. 상속*/
+}
+.box2 > li {/* 자식 선택자 : 기준 요소의 직계 자식으로 존재하는 요소 */
+  text-decoration: line-through;/* 취소선 */
+}

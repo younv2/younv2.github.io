@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 18px;
+    background-color: purple;
+    text-align: left;
+    color: yellow;
+    padding : 5px;
+    margin : 0px;
+}
+.piano_table > thead{
+    background-color: hotpink;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+.piano_table th.price {
+    width : 100px;
+}
+.piano_table td > img {
+    width :200px
+}
+.piano_table > tbody > tr >td {
+    font-size: 13px;
+    vertical-align: top;
+}

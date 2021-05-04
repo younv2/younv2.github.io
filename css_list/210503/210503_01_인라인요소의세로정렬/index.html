@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>인라인 요소의 세로 정렬 vertical-align</title>
+        <style>
+            p {
+                background-color: orange;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            #six-months{
+                vertical-align: top;
+            }
+            #one-year{
+                vertical-align: baseline;
+            }
+            #two-years1{
+                vertical-align: bottom;
+            }
+            #two-years2{
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>인라인 요소의 세로 정렬 vertical-align</h1>
+        <ul>
+            <li>서체 세로 정렬</li>
+            <li>글씨와 이미지 및 input의 정렬 상태가 맞지 않는다면, 이미지 요소 및 input에 vertical-align 적용</li>
+        </ul>
+        <p>
+            <img src="images/six-months.gif" alt="6개월 강아지" id="six-months"> six-months : top; 
+        </p>
+        <p>
+            <img src="images/one-year.gif" alt="1살 강아지" id="one-year"> one-year : baseline
+        </p>
+        <p>
+            <img src="images/two-years.gif" alt="2살 강아지" id="two-years1"> two-years : bottom
+        </p>
+        <p>
+            <img src="images/two-years.gif" alt="2살 강아지" id="two-years2"> two-years : middle
+        </p>
+    </body>
+</html>

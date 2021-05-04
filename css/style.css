@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.contents {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    width: 200px;
+    height: 100%;
+    padding: 30px 30px;
+    background: gray;
+  }
+  .main {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    width: 70%;
+    height: 100%;
+    padding: 30px 30px;
+    background: blue;
+  }

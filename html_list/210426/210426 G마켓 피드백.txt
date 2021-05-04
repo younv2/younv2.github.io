@@ -1,0 +1,23 @@
+210426 Gmarket 카피 피드백
+
+<h1>은 한번만 사용하는 것을 권장
+
+form의 경우 관련 태그가 사용되는 곳과 가까운 곳에 둘 것
+
+<br>태그는 반드시 그 부분에서만의 줄바꿈이 필요할 때 사용.
+ 여백을 만들기 위해 사용 X
+<div>나 <section>박스로 각 문단을 나눌것
+일반적인 내용에 <p> 사용
+
+if 강사님이 코드를 작성한다면..
+<div class="txt_box">
+    <h3>Gmarket Sans Light</h3>
+    <h3>Gmarket Sans Medium</h3>
+    <h4>Gmarket Sans Bold</h4>
+    <p>Gmarket Sans는 한글 11172자, 영문 95자, 특수문자 986자로 구성되며
+      Bold, Medium, Light 세 가지 굵기로 제작되었습니다.</p>
+    <ul>
+      <li><a href="#">prev</a></li>
+      <li><a href="#">next</a></li>
+    </ul>
+  </div>
