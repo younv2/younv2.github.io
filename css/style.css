@@ -1,31 +1,27 @@
 @charset "UTF-8";
-
-header {
-    position: absolute;
-    background-color: lightgray;
-    left: 30px;
-    top: 100px;
-    width: 270px;
-    height: 300px;
-}
-header > h1 {
-    font-size: 20px;
+body {
+    text-align: center;
+    background-color: #EEE;
 }
 h1 > a {
     text-decoration: none;
 }
-header > img {
-    width : 100px;
-}
-.contents {
+nav {
     position: absolute;
     left: 30px;
-    top: 400px;
+    top: 100px;
     width: 270px;
     height: 100%;
     background: gray;
 }
-.main {
+nav  ul  li  a {
+    display: block;
+    background-color: aqua;
+}
+nav  ul  li  a:hover {
+    background-color: red;
+}
+main {
     position: absolute;
     left: 300px;
     top: 100px;
@@ -33,6 +29,6 @@ header > img {
     height: 100%;
     background: lightgray;
 }
-.main img {
+main img {
     width : 300px;
 }
