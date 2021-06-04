@@ -1,34 +1,56 @@
 @charset "UTF-8";
+
+/*global setting*/
 body {
     text-align: center;
     background-color: #EEE;
 }
-h1 > a {
-    text-decoration: none;
-}
-nav {
-    position: absolute;
-    left: 30px;
-    top: 100px;
-    width: 270px;
-    height: 100%;
-    background: gray;
-}
-nav  ul  li  a {
+a {
     display: block;
-    background-color: aqua;
+    font-weight: bold;
+    color : white;
 }
-nav  ul  li  a:hover {
-    background-color: red;
+a:hover {
+    color: red;
 }
+/* header */
+header h1{
+    font-size : 22px;
+    font-weight: bold;
+    height : 100px;
+    line-height: 100px;
+}
+header h1 a {
+    color : black;
+}
+/* nav */
+nav {
+    position: relative;
+    background: gray;
+    box-shadow: black 0 1px 3px;
+    margin:  0;
+}
+nav #gnb {
+    overflow: hidden;
+    
+    width : 600px;
+    margin : 0 auto;
+    
+}
+nav #gnb li{
+    float : left;
+    width : 150px;
+    height : 60px;
+    line-height: 60px;
+}
+/* main */
 main {
-    position: absolute;
-    left: 300px;
-    top: 100px;
-    width: 70%;
-    height: 100%;
-    background: lightgray;
+    padding-top : 20px;
+    background: #fff;
+    height : 2000px;
 }
 main img {
+    margin : 10px;
     width : 300px;
+    border : 1px solid;
 }
