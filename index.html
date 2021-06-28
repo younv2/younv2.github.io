@@ -7,6 +7,7 @@
     <title>Line's Develop</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -19,20 +20,57 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">Line의 개발일지</a></h1>
-        <nav>
-            <ul id="gnb">
-                <li><a href="#">프로그래밍</a></li>
-                <li><a href="#">디자인</a></li>
-                <li><a href="development_journal/index.html">블로그 개발일지</a></li>
-                <li><a href="information/index.html">내 정보</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Welcome</h2>
-    </main>
+    <div class="wrapper">
+        <section id="top_container" class ="container">
+            <h2>Web Publisher</h2>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#top_container">HOME</a></li>
+                    <li><a href="#about_container">ABOUT</a></li>
+                    <li><a href="#about_container">SKILL</a></li>
+                    <li><a href="#portfolio_container">PORTFOLIO</a></li>
+                    <li><a href="#contact_container">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="top"></a>
+        </section>
+        
+        <section id="about_container" class ="container">
+            <h2>ABOUT</h2>
+            <div class="profile_image"></div>
+            <div class="profile">
+                <h3>PROFILE</h3>
+                <p>윤주호(Yun Juho)</p>
+                <p>1996.01.30</p>
+                <p>21.04 ~ 더조은아카데미 웹퍼블리셔 과정 진행중</p>
+                <h3>LICENSE</h3>
+                <p>전기기능사</p>
+                <p>정보처리기능사</p>
+                <p>컴활 1급(필기)</p>
+                <p>웹디자인기능사(필기)</p>
+                <p>신입 웹 퍼블리셔입니다.</p>
+                <!-- 블로그나 깃허브를 제작하여 그 사이트로 링크를 걸어주는 것도 좋아보임 -->
+            </div>
+        </section>
+        <section id="skill_container" class ="container">
+            <h2>SKILL</h2>
+            <!-- 하단의 이미지에 hover상태가 될경우 링형 게이지로 보여주거나 내부에 선형 게이지를 보여줄것 -->
+            <img src="" alt="html/css">
+            <img src="" alt="javascript/jquery">
+            <img src="" alt="photoshop/illustrator/xd">
+            <!-- 이 스킬들을 어떤식으로 활용할수 있는지 작성 -->
+        </section>
+        <section id="portfolio_container" class ="container">
+            <h2>PORTFOLIO</h2>
+            <!-- 포트폴리오 슬라이더 작성 -->
+            <!-- 더보기 칸을 만들어 내 전체 포트폴리오를 볼 수 있는 서브페이지로 이동 -->
+        </section>
+        <section id="contact_container" class ="container">
+            <h2>CONTACT</h2>
+            <!-- 전화번호,카톡,이메일 -->
+            <!-- 일본:라인 -->
+        </section>
+    </div>
 </body>
 
 </html>

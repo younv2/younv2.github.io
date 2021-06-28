@@ -1,56 +1,77 @@
 @charset "UTF-8";
 
-/*global setting*/
-body {
-    text-align: center;
-    background-color: #EEE;
-}
-a {
+a{
     display: block;
-    font-weight: bold;
     color : white;
+    font-weight : bold;
 }
-a:hover {
-    color: red;
+h2,h3 { font-weight: bold;}
+.container {
+    width : 100%; height : 100vh;
+    overflow : hidden;
+    display: flex;
 }
-/* header */
-header h1{
-    font-size : 22px;
-    font-weight: bold;
-    height : 100px;
-    line-height: 100px;
+#top_container {
+    background-color: darkblue;
+    
 }
-header h1 a {
-    color : black;
+#about_container {
+    background-color: darkcyan;
 }
-/* nav */
+#skill_container {
+    background-color: turquoise;
+}
+#portfolio_container {
+    background-color: darkgreen;
+}
+#contact_container {
+    background-color: darkorchid;
+}
+::selection {
+    background-color: transparent;
+}
+.container > h2 {
+    margin:0;
+    font-size: 3rem;
+    color: white;
+    margin : 20px 0 0 20px;
+}
+/* top_container */
+#top_container > h2 {
+    font-size: 6rem;
+    color: white;
+    position: absolute;
+    align-self: center;
+    padding-left : 30px;
+}
+#top_container > .top {
+    width: 50px; height : 50px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 10px; right: 10px;
+    background-color: green;
+    align-self: flex-end;
+}
 nav {
     position: relative;
-    background: gray;
-    box-shadow: black 0 1px 3px;
     margin:  0;
 }
-nav #gnb {
+#gnb {
     overflow: hidden;
-    
-    width : 600px;
     margin : 0 auto;
-    
+    text-align: right;
+    position: fixed;
+    right:20px; top : 20px;
 }
-nav #gnb li{
+#gnb li{
     float : left;
-    width : 150px;
-    height : 60px;
-    line-height: 60px;
+    min-width: 100px;
+    width : 10vw;
+    text-align: center;
 }
-/* main */
-main {
-    padding-top : 20px;
-    background: #fff;
-    height : 2000px;
-}
-main img {
-    margin : 10px;
-    width : 300px;
-    border : 1px solid;
+/*about_container*/
+#about_container > .profile_image {
+    width: 200px; height: 200px;
+    background: url(../images/윤주호.jpg) no-repeat 50% 50% / 200px 200px;
+    margin : 50px 50px;
 }
